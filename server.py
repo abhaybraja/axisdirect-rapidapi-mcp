@@ -1,7 +1,12 @@
+from auth import MyOAuthServerProvider, get_auth
 from mcp.server.fastmcp import FastMCP
 
 # Create an MCP server
-mcp = FastMCP("AxisDirect RAPID API")
+mcp = FastMCP(
+    "AxisDirect RAPID API",
+    auth_server_provider=MyOAuthServerProvider(),
+    auth=get_auth()
+)
 
 
 @mcp.resource("config://app")
