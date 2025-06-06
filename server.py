@@ -4,5 +4,5 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("AxisDirect RAPID API")
 
 @mcp.tool
-def get_profile()
+def get_profile():
     pass
