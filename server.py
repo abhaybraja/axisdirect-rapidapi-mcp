@@ -18,4 +18,5 @@ def get_config() -> str:
 @mcp.resource("users://{user_id}/profile")
 def get_user_profile(user_id: str) -> str:
     """Dynamic user data"""
+    # get the token and fetch user profile; use axisdirect-rapidapi package
     return f"Profile data for user {user_id}"
